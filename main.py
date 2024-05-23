@@ -37,3 +37,13 @@ def create(users: list) -> None:
 
 # add_user(data_of_users)
 # read(data_of_users)
+def delete_user(users: list) -> None:
+    name:str=input('eneter a name of user to remove:')
+    for user in users:
+            if user['name']==name:
+                users.remove(user)
+
+
+
+# delete_user(data_of_users)
+# read(data_of_users)
